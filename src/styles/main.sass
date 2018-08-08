@@ -5,6 +5,7 @@ $mauxanh: #17c2a4 // Mau xanh
 $mauthanhvien: #27283d //Màu của section  thành viên
 $mauskill: #ffdd99 // Màu section skill
 $mautest: #d74680 // màu testimonials
+$maucontact: #3c5499 // Màu phần contact
 
 @font-face
 	font-family: TitilliumWeb
@@ -38,9 +39,19 @@ header
 				bottom: 0px
 				left: 45%
 	p 
-		padding: 1rem 0rem
+		padding: 1rem 17rem 1rem 17rem !important
+		
 
 	// css nút 
+@mixin btn-to($mauchu, $maunen)
+	font-size: 1rem
+	text-decoration: none
+	padding: 1rem 4rem
+	text-transform: uppercase
+	border: none
+	box-shadow: -1px 3px 0px darken( $maunen , 30%)
+	color: $mauchu
+	background: $maunen
 .btn-more
 	font-size: 1rem
 	text-decoration: none
@@ -67,14 +78,7 @@ header
 		padding: 3rem 0px
 	p 
 	.btn-more
-		font-size: 1rem
-		text-decoration: none
-		color: #fff
-		background: $maucam
-		padding: 1rem 4rem
-		box-shadow: -1px 3px 0px darken($maucam, 30%)
-		text-transform: uppercase
-		border: none
+		@include btn-to(#fff,$maucam )
 
 
 // CSS service 
@@ -163,8 +167,6 @@ header
 .home_Portfolio
 	background:	#ffdd99 
 	min-height: 100vh
-	.title_all
-		padding: 5rem 15rem 1rem 15rem
 	.box-btn
 		width: 30%
 		margin: 0px auto
@@ -185,18 +187,12 @@ header
 			text-align: center
 			text-transform: uppercase
 	.btn-more
-		font-size: 1rem
-		text-decoration: none
-		color: #fff
-		background: #17c2a4
-		padding: 1rem 4rem
-		box-shadow: -1px 3px 0px darken(#17c2a4, 30%)
-		text-transform: uppercase
-		border: none
+		@include btn-to(#fff, #17c2a4)
 
-// CSS TEST
-.home_test
+//css phần nói về chúng tôi
+.home_about
 	background-color: $mautest
+	color: #fff
 	.test_avatar
 		>div 
 			display: flex
@@ -205,6 +201,41 @@ header
 					width: 100px
 					height: 100px
 					border-radius: 50%
-					margin-right: 30px
+					margin-right: 3.5rem
 			.text 
+				p 
+					font-style: italic
+				h2 
+					font-size: 1.4rem 
+					// font-family: TitilliumWeb-Bold
+					font-weight: bold 
+					letter-spacing: .1rem
+					color: #fff
+					text-transform: uppercase
+				h6 
+					color: #fcd597
+
+// css phần  liên hệ  
+.home_contact
+
+	background: $maucontact
+	color: #fff
+	form 
+		padding: 0rem 5rem
+	input, textarea  
+		background: #273a71
+		border: none
+		padding: 1.7rem 2rem
+		&:focus 
+			background: #273a71
+			outline: none
+			border: none
+		&::placeholder
+			color: #fff
+			font-size: 1.1rem
+	.btn-more
+		@include btn-to(#fff, #2188aa)
+
+
+
 

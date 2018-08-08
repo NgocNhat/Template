@@ -79,7 +79,7 @@ block main
 			.row.text-center.title_all
 				.col 
 					h2 MEET OUR BEAUTIFUL TEAM
-					p.pl-5.pr-5 Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam
+					p.pl-5.pr-5 We are a small team of designers and developers, who help brands with big ideas.
 			.row.member_team
 				.col-md-3.home_member
 					+member('home_member_1.png','#', 'CEO / Marketing Guru','ANNE HATHAWAY', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.')
@@ -95,7 +95,8 @@ block main
 			.row.text-center.title_all
 				.col 
 					h2 WE GOT SKILLS!
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					p We are a small team of designers and developers, who help brands with big ideas.
+
 			.row
 				.col 
 					
@@ -138,8 +139,8 @@ block main
 
 	
 		
-	
-	section.home_test
+	//- phần  về chúng tôi 
+	section.home_about
 		.container 
 			.row.text-center.title_all
 				.col 
@@ -178,6 +179,31 @@ block main
 							p “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla 	urna eu nisl scelerisque.”
 							h2 Chanel Iman
 							h6 CEO of Pinterest		
+
+	//- Phần liên hệ
+
+	section.home_contact
+		.container
+			.row.text-center.title_all
+				.col
+					h2 GET IN TOUCH
+					p 1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+			form
+				.form-row.p-5
+					.col
+						input.form-control(type='text', placeholder='First name')
+					.col
+						input.form-control(type='text', placeholder='Last name')
+					.col-12.mt-3
+						textarea#exampleFormControlTextarea1.form-control(rows='7', placeholder="Your Message")
+			.row
+				.col-md-12.text-center
+					p.mt-2.mb-5
+						a.btn.btn-light.btn-more(href="#") SEND MESSAGE
+
+
+
+
 
 
 
