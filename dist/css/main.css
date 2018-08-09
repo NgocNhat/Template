@@ -163,6 +163,8 @@ header {
       background-color: #ebc985; }
       .home_Portfolio .box-btn a:hover {
         background-color: #fff; }
+  .home_Portfolio figure img {
+    width: 100%; }
   .home_Portfolio figure figcaption {
     text-align: center;
     text-transform: uppercase; }
