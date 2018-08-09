@@ -6,7 +6,6 @@ $mauthanhvien: #27283d //Màu của section  thành viên
 $mauskill: #ffdd99 // Màu section skill
 $mautest: #d74680 // màu testimonials
 $maucontact: #3c5499 // Màu phần contact
-
 @font-face
 	font-family: TitilliumWeb
 	src: url('../Font/TitilliumWeb-Regular.ttf') 
@@ -22,6 +21,9 @@ header
 // Phần này css chung cho các phần giống nhau trên trang web
 	// css title của các section
 .title_all 
+	p 
+		font-size: 1.2rem
+		padding: .3rem 0rem
 	h2 
 		font-size: 2rem
 		font-weight: 900 
@@ -38,8 +40,8 @@ header
 				height: 3px
 				bottom: 0px
 				left: 45%
-	p 
-		padding: 1rem 17rem 1rem 17rem !important
+				opacity: .4
+
 		
 
 	// css nút 
@@ -61,14 +63,37 @@ header
 	box-shadow: -1px 3px 0px darken($maucam, 30%)
 	text-transform: uppercase
 	border: none
-
 // Kết thúc phần css chung
+
+
+//CSS phần header 
+
+header 
+	width: 100%
+	.menu 
+		ul 
+			list-style: none 
+			display: flex
+			justify-content: space-around
+			a 
+				text-decoration: none 
+				color: #fff 
+			li 
+				padding: 0.2rem 0.5rem
+				border-radius: .3rem
+				&:hover 
+					background: #643a79
+
+
+
+
 
 // Viết css phần banner  trang chủ
 .home_banner
 	background-color: $mautim
-	min-height: 100vh
-	font-size: 1.5rem
+	min-height: 70vh
+	font-size: 2.5rem
+	font-weight: 600
 	color: #fff
 	display: flex
 	justify-content: center
@@ -78,6 +103,7 @@ header
 		padding: 3rem 0px
 	p 
 	.btn-more
+		margin-top: 3rem
 		@include btn-to(#fff,$maucam )
 
 
@@ -90,9 +116,6 @@ header
 	display: flex 
 	justify-content: center
 	align-items: center
-	p 
-		padding: 2rem 14rem
-		font-size: 1.2rem
 	.home_service_icon 
 		text-align: center
 		h3 
@@ -140,30 +163,26 @@ header
 
 // CSS phần skill 
 .home_skill
-	min-height: 100vh
+	min-height: 70vh
 
+	div[id^='circle']
+		position: relative
+		display: flex 
+		justify-content: center
+		align-items: center
+		canvas
+			transform: rotate(90deg)
+		p 
+			font-size: 2rem 
+			font-weight: 600
+			position: absolute
+	h3 
+		text-align: center
+		margin: 3rem 0rem
+		font-weight: 600
+	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// CSS phần portfolio
 .home_Portfolio
 	background:	#ffdd99 
 	min-height: 100vh
@@ -220,6 +239,9 @@ header
 
 	background: $maucontact
 	color: #fff
+	.title_all
+		p 
+			padding: 0rem 5rem
 	form 
 		padding: 0rem 5rem
 	input, textarea  
@@ -236,6 +258,26 @@ header
 	.btn-more
 		@include btn-to(#fff, #2188aa)
 
-
+// CSS footer
+footer 
+	background: #344b8e 
+	ul 
+		margin-top: 2rem
+		list-style: none 
+		display: flex
+		justify-content: center
+		a 
+			font-size: 1.7rem 
+			font-weight: 500
+			text-decoration: none 
+			color: #fff 
+		li 
+			padding: 0.2rem 1rem
+			border-radius: .3rem
+			&:hover a 
+				color: #30bae7
+	p 
+		text-align: center
+		font-size: 1.5rem
 
 

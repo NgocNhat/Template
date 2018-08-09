@@ -1,29 +1,30 @@
 extends _layout/layout.pug
 block main 
 
-	//- Phần này viết mixin 
-		
-
-	//- kết thúc viết mixin
-
-
 	//- Phần baner trang chủ
 	section.home_banner
 		.container 
 			.row
 				.col 
-					h1 Hi there! We are the new kids on the block and we build awesome websites and mobile  apps.
+					h1 
+					| Hi there! We are the new kids on the block 
+					br
+					|and we build awesome websites and mobile  apps.
 					p
 						a.btn.btn-light.btn-more(href="#") WORK WITH US!
-	//- Phần  section service
 
+
+	//- Phần  section service
 	section.home_service 
 		.container 
 			.row.title_all
 				.col.text-center
 					h2 SERVICES WE PROVIDE
-					p We are working with both individuals and businesses from all over the globe to create awesome websites and applications.
-			.row.home_service_icon
+					p 
+						|We are working with both individuals and businesses from all over the globe
+						br
+						| to create awesome websites and applications.
+			.row.mt-5.home_service_icon
 				.col-md-3
 					figure
 						a(href="#") 
@@ -95,10 +96,35 @@ block main
 			.row.text-center.title_all
 				.col 
 					h2 WE GOT SKILLS!
-					p We are a small team of designers and developers, who help brands with big ideas.
+					p 
+						|Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+						br
+						|tempor incididunt ut labore et dolore magna aliqua.
 
-			.row
-				.col 
+			.row.mt-5
+				.col-md-3 
+					#circle1
+						p 85%
+					h3 Web Design
+				.col-md-3 
+					#circle2
+						p 75%
+					h3 HTML / CSS
+				.col-md-3
+					#circle3
+						p 70%
+					h3 GRAPHIC DESIGN
+				.col-md-3 
+					#circle4
+						p 85%
+					h3 UI / UX
+
+						
+
+				
+
+
+
 					
 
 

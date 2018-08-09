@@ -16,6 +16,14 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('./dist/img'));
 });
 
+gulp.task('copy-js', function() {
+    return gulp.src([
+            'bower_components/jquery-circle-progress/dist/circle-progress.min.js',
+        ])
+        .pipe(gulp.dest('./dist/js'));
+});
+
+
 // Nối file CSS
 gulp.task('noifile-css', function() {
     return gulp.src([
@@ -31,6 +39,8 @@ gulp.task('noifile-js', function() {
             'bower_components/jquery/dist/jquery.slim.min.js',
             'bower_components/popper.js/dist/umd/popper.min.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
+            // 'bower_components/jquery-circle-progress/dist/circle-progress.min.js',
+
         ])
         .pipe(concat('thuvien.js'))
         .pipe(gulp.dest('./dist/js'));

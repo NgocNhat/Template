@@ -1,2 +1,17 @@
-//- header
-//- 	h1 Đây là header
+
+header
+	.row
+		.col-md-3.mt-5.offset-md-2.logo
+			#logo
+				img(src="img/logo.png")
+		.col-md-3.mt-5.offset-md-2
+			nav.menu
+				ul
+					-var menu = ['HOME','ABOUT','WORK','BLOG','CONTACT']
+					each val in menu
+						li 
+							a(href="#")=val
+							
+				
+					
+					
