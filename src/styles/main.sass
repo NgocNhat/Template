@@ -203,8 +203,8 @@ header
 				background-color: #fff
 
 	figure 
-		img 
-			width: 100%
+		// img 
+		// 	width: 100%
 		figcaption 
 			text-align: center
 			text-transform: uppercase
@@ -217,13 +217,13 @@ header
 	color: #fff
 	.test_avatar
 		>div 
-			display: flex
-			figure 
+			figure
+				text-align: center
 				img
 					width: 100px
 					height: 100px
 					border-radius: 50%
-					margin-right: 3.5rem
+					margin: 1rem auto
 			.text 
 				p 
 					font-style: italic
@@ -239,7 +239,6 @@ header
 
 // css phần  liên hệ  
 .home_contact
-
 	background: $maucontact
 	color: #fff
 	.title_all
@@ -284,3 +283,12 @@ footer
 		font-size: 1.5rem
 
 
+//- reposive
+@media (max-width: 560px) 
+	.home_about 
+		.text 
+			text-align: center
+	.home_contact 
+		form 
+			padding: 0rem
+	

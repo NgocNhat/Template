@@ -131,7 +131,7 @@ block main
 	//- Mixin img
 	mixin imgPro(img,name)
 		figure
-			img(src="img/"+img, alt="alt").mt-md-3
+			img(src="img/"+img, alt="alt").mt-md-3.img-fluid
 			figcaption.mt-md-2=name
 
 	//- Phần Portfolio
@@ -170,38 +170,43 @@ block main
 		.container 
 			.row.text-center.title_all
 				.col 
-					h2 WHAT POEPLE SAY ABOUT US
+					h2 WHAT PEOPLE SAY ABOUT US
 					p Our clients love us!
-			.row.test_avatar
-				.col-md-6.p-5
-						figure
+			.row.p-5.test_avatar
+				.col-md-6
+					.row.con
+						figure.col-md-3
 							img(src="img/home_member_1.png", alt="alt").class
 							figcaption 
-						.text 
-							p “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla 	urna eu nisl scelerisque.”
-							h2 Chanel Iman
-							h6 CEO of Pinterest
-				.col-md-6.p-5
-						figure
-							img(src="img/home_member_1.png", alt="alt").class
-							figcaption 
-						.text 
+						.col-md-8.text 
 							p “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla 	urna eu nisl scelerisque.”
 							h2 Chanel Iman
 							h6 CEO of Pinterest		
-				.col-md-6.p-5
-						figure
+						
+				.col-md-6
+					.row.con
+						figure.col-md-3
 							img(src="img/home_member_1.png", alt="alt").class
 							figcaption 
-						.text 
+						.col-md-8.align-sx-center.text 
 							p “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla 	urna eu nisl scelerisque.”
 							h2 Chanel Iman
-							h6 CEO of Pinterest
-				.col-md-6.p-5
-						figure
+							h6 CEO of Pinterest		
+				.col-md-6
+					.row.con
+						figure.col-md-3
 							img(src="img/home_member_1.png", alt="alt").class
 							figcaption 
-						.text 
+						.col-md-8.align-sx-center.text 
+							p “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla 	urna eu nisl scelerisque.”
+							h2 Chanel Iman
+							h6 CEO of Pinterest		
+				.col-md-6
+					.row.con
+						figure.col-md-3
+							img(src="img/home_member_1.png", alt="alt").class
+							figcaption 
+						.col-md-8.align-sx-center.text 
 							p “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla 	urna eu nisl scelerisque.”
 							h2 Chanel Iman
 							h6 CEO of Pinterest		
@@ -215,7 +220,7 @@ block main
 					h2 GET IN TOUCH
 					p 1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
 			form
-				.form-row.p-5
+				.form-row
 					.col
 						input.form-control(type='text', placeholder='First name')
 					.col

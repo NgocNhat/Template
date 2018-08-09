@@ -163,8 +163,6 @@ header {
       background-color: #ebc985; }
       .home_Portfolio .box-btn a:hover {
         background-color: #fff; }
-  .home_Portfolio figure img {
-    width: 100%; }
   .home_Portfolio figure figcaption {
     text-align: center;
     text-transform: uppercase; }
@@ -181,23 +179,23 @@ header {
 .home_about {
   background-color: #d74680;
   color: #fff; }
-  .home_about .test_avatar > div {
-    display: flex; }
+  .home_about .test_avatar > div figure {
+    text-align: center; }
     .home_about .test_avatar > div figure img {
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      margin-right: 3.5rem; }
-    .home_about .test_avatar > div .text p {
-      font-style: italic; }
-    .home_about .test_avatar > div .text h2 {
-      font-size: 1.4rem;
-      font-weight: bold;
-      letter-spacing: .1rem;
-      color: #fff;
-      text-transform: uppercase; }
-    .home_about .test_avatar > div .text h6 {
-      color: #fcd597; }
+      margin: 1rem auto; }
+  .home_about .test_avatar > div .text p {
+    font-style: italic; }
+  .home_about .test_avatar > div .text h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    color: #fff;
+    text-transform: uppercase; }
+  .home_about .test_avatar > div .text h6 {
+    color: #fcd597; }
 
 .home_contact {
   background: #3c5499;
@@ -247,5 +245,11 @@ footer {
   footer p {
     text-align: center;
     font-size: 1.5rem; }
+
+@media (max-width: 560px) {
+  .home_about .text {
+    text-align: center; }
+  .home_contact form {
+    padding: 0rem; } }
 
 /*# sourceMappingURL=main.css.map */
