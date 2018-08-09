@@ -86,7 +86,7 @@ header {
   font-size: 18pt;
   color: #fff;
   background-color: #17c2a4;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center; }
