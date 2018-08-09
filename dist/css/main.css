@@ -250,6 +250,13 @@ footer {
   .home_about .text {
     text-align: center; }
   .home_contact form {
-    padding: 0rem; } }
+    padding: 0rem; }
+  header .menu ul {
+    display: none; }
+  footer ul {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 /*# sourceMappingURL=main.css.map */
